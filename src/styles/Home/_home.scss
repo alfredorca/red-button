@@ -1,0 +1,74 @@
+.mainContainer {
+  
+  height: 100vh;
+}
+
+.buttonContainer{
+  background-color: white;
+  margin-top: 10vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  p {
+    font-size: 3vw;
+  }
+
+  @media only screen and (max-width: 1400px) and (min-width:1201px){
+    margin-top: 20vh;
+  }
+  @media only screen and (max-width: 1200px) and (min-width:801px){
+    margin-top: 20vh;
+  }
+  @media only screen and (max-width: 800px) {
+    margin-left: 32vw;
+    margin-top: 30vh;
+  }
+}
+
+.kids {
+  width: 50vw;
+  position: absolute;
+  top: 10%;
+  left: -30%;
+  animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+  @media only screen and (max-width: 1200px) and (min-width: 801 px){
+    width: 70vw;
+    left:-60%;
+  }
+  @media only screen and (max-width: 800px) {
+    width: 80vw;
+    left:-80%;
+  }
+  
+}
+
+.logo {
+  width: 25vw;
+  position: absolute;
+  top: -20%;
+  left: -100%;
+  @media only screen and (max-width: 1400px) and (min-width:1201px){
+    width: 35vw;
+    top: -45%;
+    left: -100%;
+  }
+  @media only screen and (max-width: 1200px) and (min-width:1001px){
+    width: 40vw;
+    top: -50%;
+    left: -90%;
+  }
+  @media only screen and (max-width: 1025px) and (min-width:801px){
+    width: 40vw;
+    top: -45%;
+    left: -90%;
+  }
+  @media only screen and (max-width: 800px) {
+    width: 35vw;
+    top: -45%;
+    left: 0%
+  }
+}
+
